@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+ 			body {
+   			 background-color: lightgray; /* Add your desired background color here */
+ 			}
+
+			/* Style for the fieldset */
+			fieldset {
+			  border: 1px solid #ccc;
+			  border-radius: 5px;
+			  padding: 10px;
+			  margin-bottom: 10px;
+			}
+		  
+			/* Style for the button */
+			button {
+			  padding: 8px 16px;
+			  font-size: 14px;
+			  border: none;
+			  border-radius: 5px;
+			  background-color: #4caf50;
+			  color: white;
+			  cursor: pointer;
+			}
+		  
+			/* Style for the radio buttons */
+			input[type="radio"] {
+			  margin-right: 5px;
+			}
+		</style>
+
+			<title>Fancify Shamcify</title>
+
+
+		<script src="/fancifymytext.js"></script>
+		
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		
+
+		<fieldset>
+			<legend>Text</legend>
+			<textarea id="textInput" rows="4" cols="30"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Fancify</legend>
+			<button onclick="biggerText()">Bigger!</button>
+			<label><input type="radio" name="style" value="fancy" id="fancyRadio" onchange="applyStyles()">FancyShmancy</label>
+			<label><input type="radio" name="style" value="boring" id="boringRadio" onchange="applyStyles(); handleRadioChange()">BoringBetty</label>
+
+		</fieldset>
+		<button onclick="uppercaseAndMoo()">Moo</button>
+
+
+	</body>
+</html>
